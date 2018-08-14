@@ -6,13 +6,13 @@ namespace CG_4_1_Loops
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter a number, and I will give you the first 18 multiples and add them together.");
+            Console.WriteLine("Enter a number, and I will give you the first 20 multiples and add them together.");
 
             string userValue = Console.ReadLine();
             int x = Convert.ToInt32(userValue);
 
             {
-                for (int i = 2; i < 20; i++)
+                for (int i = 2; i <= 20; i++)
                 {
                     Console.WriteLine(i * x);
                 }
@@ -22,7 +22,7 @@ namespace CG_4_1_Loops
             {
             if (i < 21)
                 {
-                sum = sum + i * x;
+                sum += i * x;
                 }
             }
 
