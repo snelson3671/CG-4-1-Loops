@@ -11,21 +11,14 @@ namespace CG_4_1_Loops
             string userValue = Console.ReadLine();
             int x = Convert.ToInt32(userValue);
 
-            {
-                for (int i = 2; i <= 20; i++)
+            int sum = 0;
+
+            for (int i = 2; i <= 20; i++)
                 {
+                    sum += i * x;
                     Console.WriteLine(i * x);
                 }
-            }
-            int sum = 0;
-            for (int i = 1; i < 21; i++)
-            {
-            if (i < 21)
-                {
-                sum += i * x;
-                }
-            }
-
+            
             Console.WriteLine($"The sum is {sum}");
             Console.ReadLine();
         }
